@@ -1,0 +1,25 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbmybook/website.git"
+  },
+  "keywords": [
+    "mbmybook"
+  ],
+  "author": "Brian Bo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mbmybook/website/issues"
+  },
+  "homepage": "https://github.com/mbmybook/website#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
