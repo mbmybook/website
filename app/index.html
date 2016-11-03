@@ -1,17 +1,29 @@
 <!doctype html>
-<html lang="en" ng-app="website">
+<html lang="en" ng-app='websiteApp'>
   <head>
-    <meta charset="utf-8">
-    <title>MBMybook</title>
+		<!-- meta data -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<script src="/node_modules/angular/angular.js"></script>
-	<script src="app.js"></script>
+		<!-- css imports -->
+		<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- js libs -->
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="bower_components/angular/angular.min.js"></script>
+		<script src="bower_components/angular-route/angular-route.min.js"></script>
+
+		<!-- module imports -->
+		<script src="public/app.js"></script>
+		<script src="public/routes.js"></script>
+		<script src="public/mainController.js"></script>
+
+		<!-- title -->
+    <title>MB Mybook</title>
   </head>
-  <body>
-
-    <div class="view-container">
-      <div ng-view class="view-frame"></div>
-    </div>
-
-  </body>
+	<body>
+		<div ng-view class="view-container"></div>
+	</body>
 </html>
