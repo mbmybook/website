@@ -16,6 +16,10 @@
 	margin-top: 80px;
 	font-size: 1.1em;
 }
+.text-line {
+	display: block;
+	font-family: Helvetica;
+}
 
 @media only screen and (min-width: 1000px) {
 	.center-img {
@@ -24,5 +28,8 @@
 	}
 	.center-text {
 		font-size: 1.5em;
+	}
+	.text-line {
+		display: inline;
 	}
 }
