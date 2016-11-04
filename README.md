@@ -10,10 +10,8 @@ http://mbmybook.ca
 ### Production & Continuous Integration
 1. install package and dependencies (also remove extraneous packages)
     `npm run build`
-2. run server in prod mode
-    `npm run start-prod`
-3. run server in prod mode
-    `"node_modules/.bin/cross-env" npm run start`
+2. run server
+    `npm run start`
 
 ### Development
 1. run server in dev mode (auto-detect changes without restart/redeployment)
