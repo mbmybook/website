@@ -16,6 +16,12 @@
 	margin-top: 80px;
 	font-size: 1.1em;
 }
+.top-div {
+	padding-top: 20px;
+	position:absolute;
+	left:50%;
+	transform: translate(-50%, 0%);
+}
 .text-line {
 	display: block;
 	font-family: Helvetica;
