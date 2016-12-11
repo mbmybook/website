@@ -1,0 +1,16 @@
+[{
+  "icon": "about-us-icon",
+  "link": "/about",
+  "english": "About us",
+  "chinese": "關於我們"
+},{
+  "icon": "issue-icon",
+  "link": "/issues",
+  "english": "Issues",
+  "chinese": "電子雜誌"
+},{
+  "icon": "event-icon",
+  "link": "/events",
+  "english": "Events",
+  "chinese": "活動推廣"
+}]

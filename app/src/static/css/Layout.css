@@ -1,0 +1,59 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  height: 122px;
+  max-width: 1062px;
+  min-width: 940px;
+  width: 100%;
+  display: flex;
+  flex: 0 0 auto;
+}
+.mb-logo-layout {
+  /*float: left;*/
+  margin-left: 10px;
+}
+.menu-panel-layout {
+  max-width: 834px;
+  margin-left: auto;
+}
+.content-and-footer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.content {
+  position: relative;
+  flex: 1;
+}
+.footer-container {
+  height: 145px;
+  background-color: #a5a5a5;
+}
+.footer {
+  height: 100%;
+  max-width: 1062px;
+  min-width: 940px;
+  display: flex;
+}
+.contact-panel {
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  color: #ffffff;
+  margin-left: 10px;
+}
+.social-panel {
+  margin-left: auto;
+}
+.social-button-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-left: 45px;
+}
