@@ -13,7 +13,7 @@ class MenuButton extends React.Component {
     return <NavLink to={this.props.item.link}> 
       <button className='menu-button' style={borderStyle}>
         <img className='menu-button-icon' src={require(`../static/img/${this.props.item.icon}-${color}.svg`)}/>
-        <span className='menu-button-text' style={colorStyle}>{this.props.item.english}<br />{this.props.item.chinese}</span>
+        <span className='menu-button-text font-helvetica font-size-15' style={colorStyle}>{this.props.item.english}<br />{this.props.item.chinese}</span>
       </button>
     </NavLink>
   }
