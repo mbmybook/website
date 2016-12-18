@@ -1,0 +1,47 @@
+.issues-panel {
+  max-width: 1062px;
+  min-width: 940px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.current-issue-panel {
+  display: flex;
+  flex-direction: column;
+  width: 88%;
+}
+.issue-view-title {
+  letter-spacing: 10px;
+  color: #000000;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.issue-viewer {
+  display: flex;
+  width: 750px;
+  height: 400px;
+}
+.issue-special-title {
+  letter-spacing: 10px;
+  color: #000000;
+  margin-top: 2em;
+}
+.issue-special-content {
+  line-height: 1.77;
+  color: #000000;
+}
+.issue-list-panel {
+  display: flex;
+  flex-direction: column;
+  width: 12%;
+}
+.issue-list-link {
+  margin-top: 2em;
+  text-decoration: none;
+}
+.issue-list-text {
+  line-height: 1.77;
+  text-align: center;
+  color: #000000;
+}
