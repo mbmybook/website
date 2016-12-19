@@ -2,11 +2,13 @@
 import '../static/css/style.css'
 
 import React from 'react'
+import EventPreview from './EventPreview'
 
 class Events extends React.Component {
   render() {
-    return <div>
-      <img className='mb-logo horizontal-center debug' src={require('../static/img/mb-logo-blue.svg')}/>
+    return <div className='event-panel horizontal-center debug'> 
+      <EventPreview />
+      <EventPreview />
     </div>
   }
 }
