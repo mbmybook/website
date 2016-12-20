@@ -16,7 +16,7 @@ class HeaderMenu extends React.Component {
         </NavLink>
       </div>
       <div className='menu-panel-layout vertical-center debug'>
-        {menuConfig.map(item => <MenuButton key={item.english} item={item} color='black'/>)}
+        {menuConfig.map(item => <MenuButton key={item.english} item={item} homepage={false}/>)}
       </div>
     </div>
   }

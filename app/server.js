@@ -32,6 +32,10 @@ if (process.env.NODE_ENV === 'production') {
   middleware = require('nwb/express')(express)
 }
 
+app.get('/logo.png', function(req, res) {
+  res.sendfile(path.join(__dirname, 'src/static/img/mb-logo.png'))
+})
+
 // React routing
 app.use('/', middleware)
 app.use('*', middleware)

@@ -5,9 +5,32 @@ import React from 'react'
 import NavLink from './NavLink'
 
 class MenuButton extends React.Component {
+  colorToRender(homepage, link) {
+    if (homepage) {
+      return 'white'
+    } else {
+      if (this.context.router.isActive(link)) {
+        return 'black'
+      } else {
+        return 'grey'
+      }
+    }
+  }
+  colorCodeForStyle(color) {
+    switch (color) {
+      case 'white':
+        return '#FFFFFF'
+      case 'grey':
+        return '#A5A5A5'
+      case 'black':
+        return '#000000'
+      default:
+        return '#000000' // default to black
+    }
+  }
   render() {
-    const color = this.props.color ? this.props.color : 'black' // set default to black
-    const colorCode = color === 'white' ? '#FFFFFF' : '#000000' // default to black
+    const color = this.colorToRender(this.props.homepage, this.props.item.link)
+    const colorCode = this.colorCodeForStyle(color)
     const borderStyle = { border: 'solid 1px ' + colorCode }
     const colorStyle = { color: colorCode }
     return <NavLink to={this.props.item.link}> 
@@ -17,6 +40,10 @@ class MenuButton extends React.Component {
       </button>
     </NavLink>
   }
+}
+
+MenuButton.contextTypes = {
+  router: React.PropTypes.object
 }
 
 export default MenuButton
