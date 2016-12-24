@@ -13,12 +13,12 @@ class About extends React.Component {
         {aboutParagraph.map(paragraph => 
           <div key={paragraph.title}>
             <h1 className='about-paragraph-title font-helvetica font-size-24'>{paragraph.title}</h1>
-            <p className='about-paragraph-content font-helvetica font-size-13'>{paragraph.content}</p>
+            <p className='about-paragraph-content font-helvetica font-size-13'>{paragraph.content.split(/\\n/g).join('\n')}</p>
           </div>
         )}
       </div>
       <div className='about-image-panel debug'>
-        <Picture src={require('../static/img/mb-logo-blue.svg')}/>
+        <Picture src={require('../static/img/about-us-image.jpg')}/>
       </div>
     </div>
   }

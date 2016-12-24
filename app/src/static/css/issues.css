@@ -12,7 +12,7 @@
   width: 88%;
 }
 .issue-view-title {
-  letter-spacing: 10px;
+  letter-spacing: 8px;
   color: #000000;
   margin-top: 2em;
   margin-bottom: 2em;
@@ -23,7 +23,7 @@
   height: 400px;
 }
 .issue-special-title {
-  letter-spacing: 10px;
+  letter-spacing: 8px;
   color: #000000;
   margin-top: 2em;
 }

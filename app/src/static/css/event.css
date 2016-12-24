@@ -6,6 +6,10 @@
   margin-top: 5vh;
   margin-bottom: 5vh;
 }
+.event-detail-panel {
+  max-width: 1062px;
+  min-width: 940px;
+}
 .event-preview-panel {
   display: flex;
   flex-direction: row;
@@ -48,7 +52,7 @@
 .event-preview-title {
   margin-top: 0em;
   margin-bottom: 0em;
-  letter-spacing: 10px;
+  letter-spacing: 8px;
   color: #000000;
 }
 .event-preview-meta {

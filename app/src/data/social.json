@@ -1,10 +1,10 @@
 [{
   "icon": "facebook-icon",
-  "link": "/"
+  "link": "https://www.facebook.com/mbmybook/"
 },{
   "icon": "instagram-icon",
-  "link": "/"
+  "link": "https://www.instagram.com/mbmybook/"
 },{
   "icon": "weibo-icon",
-  "link": "/" 
+  "link": "http://weibo.com/vancouvermybook/" 
 }]

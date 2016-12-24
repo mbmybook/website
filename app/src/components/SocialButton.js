@@ -6,9 +6,9 @@ import NavLink from './NavLink'
 
 class SocialButton extends React.Component {
   render() {
-    return <NavLink to={this.props.item.link}>
+    return <a href={this.props.item.link} target='_blank'>
       <img className='social-button-icon' src={require(`../static/img/${this.props.item.icon}.png`)}/>
-    </NavLink>
+    </a>
   }
 }
 

@@ -32,6 +32,7 @@ var log4jsConf = {
 }
 
 var appConfig = {
+  'EVENTS_URL': 'https://public-api.wordpress.com/rest/v1.1/sites/mbmybook.wordpress.com/posts',
   'LOG_CONF': log4jsConf,
   'LOG_LEVEL': logLevel
 }

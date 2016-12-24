@@ -1,5 +1,5 @@
 app/node_modules/*
-app/*.log
+app/*.log*
 app/lint
 app/log
 app/dist

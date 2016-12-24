@@ -9,6 +9,7 @@ import Layout from './Layout'
 import About from './About'
 import Issues from './Issues'
 import Events from './Events'
+import EventDetail from './EventDetail'
 
 class AppRoutes extends React.Component {
   render() {
@@ -19,6 +20,7 @@ class AppRoutes extends React.Component {
           <Route path='/about' component={About}/>
           <Route path='/issues' component={Issues}/>
           <Route path='/events' component={Events}/>
+          <Route path='/events/new' component={EventDetail}/>
         </Route>
         <Redirect from='*' to='/'/>
       </Route>

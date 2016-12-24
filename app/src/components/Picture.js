@@ -5,7 +5,11 @@ import React from 'react'
 
 class Picture extends React.Component {
   render() {
-    return <img className='no-borders horizontal-center vertical-center debug' src={this.props.src}/>
+    const style = {
+      'maxHeight': '100%',
+      'maxWidth': '100%'
+    }
+    return <img className='no-borders horizontal-center vertical-center debug' style={style} src={this.props.src}/>
   }
 }
 
