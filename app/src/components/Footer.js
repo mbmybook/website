@@ -11,7 +11,7 @@ class Footer extends React.Component {
     return <div className='footer-container debug'>
       <div className='footer horizontal-center debug'>
         <div className='contact-panel font-helvetica font-size-20 vertical-center debug'>
-          <a href='tel:604-780-1710'>PHONE</a>
+          <a href='tel:604-518-6668'>PHONE</a>
           <a href='mailto:&#105;&#110;&#102;&#111;&#064;&#109;&#098;&#109;&#121;&#098;&#111;&#111;&#107;&#046;&#099;&#097;'>EMAIL</a>
         </div>
         <div className='social-panel vertical-center debug'>

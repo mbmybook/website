@@ -27,7 +27,7 @@ class Issues extends React.Component {
           <IssueViewer source={this.state.issue.source}/>
         </div>
         <h1 className='issue-special-title font-helvetica font-size-24'>特別內容</h1>
-        <p className='issue-special-content font-helvetica font-size-13'>{this.state.issue.special}</p>
+        <p className='issue-special-content font-helvetica font-size-13'>{this.state.issue.special.split(/\\n/g).join('\n')}</p>
       </div>
       <div className='issue-list-panel debug'>
         {issueData.map(issue => 

@@ -8,7 +8,7 @@ import EventPreview from './EventPreview'
 import appConfig from '../data/appConfig'
 
 class Events extends React.Component {
-  serverRequest = null
+  // serverRequest = null
 
   constructor(props) {
     super(props)

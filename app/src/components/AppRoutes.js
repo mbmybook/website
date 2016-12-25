@@ -3,6 +3,8 @@ import '../static/css/style.css'
 
 import React from 'react'
 import { Router, Route, IndexRoute, browserHistory, Redirect } from 'react-router'
+import ReactGA from 'react-ga'
+
 import App from './App'
 import IndexPage from './IndexPage'
 import Layout from './Layout'
@@ -11,9 +13,16 @@ import Issues from './Issues'
 import Events from './Events'
 import EventDetail from './EventDetail'
 
+ReactGA.initialize('UA-89444152-1')
+
+function logPageView() {
+  ReactGA.set({ page: window.location.pathname })
+  ReactGA.pageview(window.location.pathname)
+}
+
 class AppRoutes extends React.Component {
   render() {
-    return <Router history={browserHistory}>
+    return <Router history={browserHistory} onUpdate={logPageView}>
       <Route path='/' component={App}>
         <IndexRoute component={IndexPage}/>
         <Route component={Layout}>

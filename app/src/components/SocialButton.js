@@ -2,7 +2,6 @@
 import '../static/css/Layout.css'
 
 import React from 'react'
-import NavLink from './NavLink'
 
 class SocialButton extends React.Component {
   render() {

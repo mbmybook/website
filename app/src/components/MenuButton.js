@@ -1,4 +1,5 @@
 'use strict'
+import '../static/css/style.css'
 import '../static/css/MenuButton.css'
 
 import React from 'react'

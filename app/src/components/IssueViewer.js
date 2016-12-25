@@ -8,7 +8,7 @@ class IssueViewer extends React.Component {
     return (
       <iframe 
         className='horizontal-center vertical-center no-borders'
-        src={this.props.source}>
+        src={this.props.source} allowFullScreen allowTransparency>
         <p>Your browser does not support iFrames.</p>
       </iframe> 
     )
