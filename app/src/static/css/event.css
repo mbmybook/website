@@ -3,8 +3,6 @@
   min-width: 940px;
   display: flex;
   flex-direction: column;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
 }
 .event-detail-panel {
   max-width: 1062px;
@@ -15,6 +13,10 @@
   flex-direction: row;
   margin-top: 5vh;
   margin-bottom: 5vh;
+  text-decoration: none;
+}
+.event-preview-panel:hover { 
+  background-color: #f2f4f4;
 }
 .event-widget-panel {
   display: flex;
@@ -30,8 +32,7 @@
   border-radius: 100px;
 }
 .event-widget-text {
-  width: 64.6px;
-  height: 21px;
+  height: 20px;
   text-align: center;
   color: #ffffff;
 }

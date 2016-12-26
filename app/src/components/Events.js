@@ -7,37 +7,44 @@ import axios from 'axios'
 import EventPreview from './EventPreview'
 import appConfig from '../data/appConfig'
 
-class Events extends React.Component {
-  // serverRequest = null
+const CancelToken = axios.CancelToken
+const source = CancelToken.source()
 
+class Events extends React.Component {
   constructor(props) {
     super(props)
     this.state = { posts : [] }
   }
   
-  componentWillMount() {
-    const _this = this
-    this.serverRequest = 
-      axios
-        .get(appConfig.EVENTS_URL)
-        .then(function(res) {    
-          _this.setState({
-            posts: res.data.posts
-          });
+  componentDidMount() {
+    axios.get(appConfig.EVENTS_URL)
+      .then(res => {    
+        this.setState({
+          posts: res.data.posts
         })
+      })
+      .catch(thrown => {
+        if (axios.isCancel(thrown)) {
+          // console.log('Request canceled', thrown.message);
+        } else {
+          // handle error
+        }
+      })
   }
 
   componentWillUnmount() {
-    this.serverRequest.abort();
+    source.cancel('Operation canceled by the user.')
   }
 
   render() {
     if (this.state.posts.length > 0) {
-      console.log('posts: ' + this.state.posts[0].content)
+      // console.log('posts: ' + this.state.posts[1].content)
+      // const post = this.state.posts[1]
       return (
         <div className='event-panel horizontal-center debug'>
-          <EventPreview />
-          <EventPreview />
+          {this.state.posts.map(post =>
+            <EventPreview key={post.slug} title={post.title} date={post.date} excerpt={post.excerpt} featured_image={post.featured_image} />
+          )}
         </div>
       )
     } else {
