@@ -13,8 +13,7 @@ class EventPreview extends React.Component {
   render() {
     const date = new Date(this.props.date)
     const now = Date.now()
-    const formatDateTime = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDay() + ' ' + date.getHours() + ':' + date.getMinutes()
-    const excerpt = this.props.excerpt.match(/<p>(.*)<\/p>/)
+    const formatDateTime = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + (date.getDay() + 1) + ' ' + date.getHours() + ':' + date.getMinutes()
     const imgSrc = this.props.featured_image ? this.props.featured_image : require('../static/img/mb-logo-blue.svg')
 
     return (
@@ -33,9 +32,9 @@ class EventPreview extends React.Component {
         <div className='event-preview-text-panel debug'>
           <h1 className='event-preview-title font-helvetica font-size-24 debug'>{this.props.title}</h1>
           <p className='event-preview-meta font-helvetica font-size-13 debug'>{formatDateTime}</p>
-          <p className='event-preview-summary font-helvetica font-size-13 debug'>
-            {excerpt ? excerpt[1] : ''}
-          </p>
+          <div className='event-preview-summary font-helvetica font-size-13 debug'
+             dangerouslySetInnerHTML={{__html: this.props.excerpt}}>
+          </div>
         </div>
       </NavLink>
     )

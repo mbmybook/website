@@ -11,6 +11,7 @@ import Layout from './Layout'
 import About from './About'
 import Issues from './Issues'
 import Events from './Events'
+import EventNew from './EventNew'
 import EventDetail from './EventDetail'
 
 ReactGA.initialize('UA-89444152-1')
@@ -29,8 +30,8 @@ class AppRoutes extends React.Component {
           <Route path='/about' component={About}/>
           <Route path='/issues' component={Issues}/>
           <Route path='/events' component={Events}/>
+          <Route path='/events/new' component={EventNew}/>
           <Route path='/events/:slug' component={EventDetail}/>
-          <Route path='/events/new' component={EventDetail}/>
         </Route>
         <Redirect from='*' to='/'/>
       </Route>

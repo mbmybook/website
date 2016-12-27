@@ -6,6 +6,7 @@ import React from 'react'
 import axios from 'axios'
 import EventPreview from './EventPreview'
 import appConfig from '../data/appConfig'
+import eventNew from '../data/eventNew'
 
 const CancelToken = axios.CancelToken
 const source = CancelToken.source()
@@ -40,6 +41,7 @@ class Events extends React.Component {
     if (this.state.posts.length > 0) {
       return (
         <div className='event-panel horizontal-center debug'>
+          <EventPreview key={eventNew.slug} slug={eventNew.slug} title={eventNew.title} date={eventNew.date} excerpt={eventNew.excerpt} featured_image={eventNew.featured_image} />
           {this.state.posts.map(post =>
             <EventPreview key={post.slug} slug={post.slug} title={post.title} date={post.date} excerpt={post.excerpt} featured_image={post.featured_image} />
           )}
