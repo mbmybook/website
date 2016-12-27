@@ -11,8 +11,8 @@
 .event-preview-panel {
   display: flex;
   flex-direction: row;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   text-decoration: none;
 }
 .event-preview-panel:hover { 
