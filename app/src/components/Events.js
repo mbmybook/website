@@ -38,12 +38,10 @@ class Events extends React.Component {
 
   render() {
     if (this.state.posts.length > 0) {
-      // console.log('posts: ' + this.state.posts[1].content)
-      // const post = this.state.posts[1]
       return (
         <div className='event-panel horizontal-center debug'>
           {this.state.posts.map(post =>
-            <EventPreview key={post.slug} title={post.title} date={post.date} excerpt={post.excerpt} featured_image={post.featured_image} />
+            <EventPreview key={post.slug} slug={post.slug} title={post.title} date={post.date} excerpt={post.excerpt} featured_image={post.featured_image} />
           )}
         </div>
       )

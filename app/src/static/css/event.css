@@ -68,3 +68,21 @@
   line-height: 1.77;
   color: #000000;
 }
+.event-detail-title {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  letter-spacing: 8px;
+  color: #000000;
+}
+.event-detail-meta {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  line-height: 1.77;
+  color: #0889ae;
+}
+.event-detail-content {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  line-height: 1.77;
+  color: #000000;
+}

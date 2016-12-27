@@ -18,7 +18,7 @@ class EventPreview extends React.Component {
     const imgSrc = this.props.featured_image ? this.props.featured_image : require('../static/img/mb-logo-blue.svg')
 
     return (
-      <NavLink className='event-preview-panel' to={'/'}>
+      <NavLink className='event-preview-panel' to={'/events/' + this.props.slug}>
         <div className='event-widget-panel debug'>
           <EventWidget color={'#0889ae'} text={formatMonth[date.getMonth()]}/>
           {date < now ? (

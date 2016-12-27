@@ -3,17 +3,47 @@ import '../static/css/style.css'
 import '../static/css/event.css'
 
 import React from 'react'
+import axios from 'axios'
+import appConfig from '../data/appConfig'
+
+const CancelToken = axios.CancelToken
+const source = CancelToken.source()
 
 class EventDetail extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { post : {} }
+  }
+  
+  componentDidMount() {
+    axios.get(appConfig.EVENTS_URL + '/slug:' + this.props.params.slug)
+      .then(res => {    
+        this.setState({
+          post: res.data
+        })
+      })
+      .catch(thrown => {
+        if (axios.isCancel(thrown)) {
+          // console.log('Request canceled', thrown.message);
+        } else {
+          // handle error
+        }
+      })
+  }
+
+  componentWillUnmount() {
+    source.cancel('Operation canceled by the user.')
+  }
+
   render() {
+    const date = new Date(this.state.post.date)
+    const formatDateTime = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDay() + ' ' + date.getHours() + ':' + date.getMinutes()
+
     return <div className='event-detail-panel horizontal-center debug'> 
-      <p>Hi, this is a test.</p>
-      <p>mbmybook events</p>
-      <p>
-        <img data-attachment-id='20' data-permalink='https://mbmybook.wordpress.com/2016/12/21/testing/07-cover/' data-orig-file='https://mbmybook.files.wordpress.com/2016/12/07-cover.png?w=200&#038;h=271' data-orig-size='65,88' data-comments-opened='1' data-image-meta='{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}' data-image-title='07-cover' data-image-description='' data-medium-file='https://mbmybook.files.wordpress.com/2016/12/07-cover.png?w=200&#038;h=271?w=65' data-large-file='https://mbmybook.files.wordpress.com/2016/12/07-cover.png?w=200&#038;h=271?w=65' class='alignnone  wp-image-20' src='https://mbmybook.files.wordpress.com/2016/12/07-cover.png?w=200&#038;h=271' alt='07-cover' width='200' height='271' />
-      </p>
-      <p>Looking nice, eh?</p>
-      <p>hahahahahahahahaha.</p>
+      <h1 className='event-detail-title font-helvetica font-size-24 debug'>{this.state.post.title}</h1>
+      <p className='event-detail-meta font-helvetica font-size-13 debug'>{formatDateTime}</p>
+      <div className='event-detail-content font-helvetica font-size-13 debug'
+           dangerouslySetInnerHTML={{__html: this.state.post.content}}></div>
     </div>
   }
 }
