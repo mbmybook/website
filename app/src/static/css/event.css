@@ -86,3 +86,9 @@
   line-height: 1.77;
   color: #000000;
 }
+.event-new-panel {
+  max-width: 1062px;
+  min-width: 940px;
+  display: flex;
+  flex-direction: column;
+}
