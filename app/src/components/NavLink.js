@@ -6,7 +6,7 @@ import { Link } from 'react-router'
 
 class NavLink extends React.Component {
   render() {
-    return <Link {...this.props} activeClassName="navlink-active"/>
+    return <Link {...this.props}/>
   }
 }
 

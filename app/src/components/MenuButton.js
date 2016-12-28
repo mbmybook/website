@@ -6,14 +6,18 @@ import React from 'react'
 import NavLink from './NavLink'
 
 class MenuButton extends React.Component {
-  colorToRender(homepage, link) {
+  colorToRender(homepage, link, name) {
     if (homepage) {
       return 'white'
     } else {
       if (this.context.router.isActive(link)) {
         return 'black'
       } else {
-        return 'grey'
+        if (name === 'Events' && this.context.router.getCurrentLocation().pathname.startsWith('/events')) {
+          return 'black'
+        } else {
+          return 'grey'
+        }
       }
     }
   }
@@ -30,7 +34,7 @@ class MenuButton extends React.Component {
     }
   }
   render() {
-    const color = this.colorToRender(this.props.homepage, this.props.item.link)
+    const color = this.colorToRender(this.props.homepage, this.props.item.link, this.props.item.english)
     const colorCode = this.colorCodeForStyle(color)
     const borderStyle = { border: 'solid 1px ' + colorCode }
     const colorStyle = { color: colorCode }
