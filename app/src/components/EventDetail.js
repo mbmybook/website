@@ -3,6 +3,7 @@ import '../static/css/style.css'
 import '../static/css/event.css'
 
 import React from 'react'
+import moment from 'moment'
 import axios from 'axios'
 import appConfig from '../data/appConfig'
 
@@ -37,7 +38,7 @@ class EventDetail extends React.Component {
 
   render() {
     const date = new Date(this.state.post.date)
-    const formatDateTime = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDay() + ' ' + date.getHours() + ':' + date.getMinutes()
+    const formatDateTime = moment(date).format('YYYY-MM-DD hh:mm')
 
     return <div className='event-detail-panel horizontal-center debug'> 
       <h1 className='event-detail-title font-helvetica font-size-24 debug'>{this.state.post.title}</h1>

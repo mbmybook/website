@@ -3,6 +3,7 @@ import '../static/css/style.css'
 import '../static/css/event.css'
 
 import React from 'react'
+import moment from 'moment'
 import NavLink from './NavLink'
 import EventWidget from './EventWidget'
 import Picture from './Picture'
@@ -13,7 +14,7 @@ class EventPreview extends React.Component {
   render() {
     const date = new Date(this.props.date)
     const now = Date.now()
-    const formatDateTime = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + (date.getDay() + 1) + ' ' + date.getHours() + ':' + date.getMinutes()
+    const formatDateTime = moment(date).format('YYYY-MM-DD hh:mm')
     const imgSrc = this.props.featured_image ? this.props.featured_image : require('../static/img/mb-logo-blue.svg')
 
     return (
