@@ -1,11 +1,11 @@
 'use strict'
-import '../static/css/style.css'
-import '../static/css/event.css'
+import '../../style.css'
+import './events.css'
 
 import React from 'react'
 import moment from 'moment'
 import axios from 'axios'
-import appConfig from '../data/appConfig'
+import appConfig from '../../appConfig'
 
 const CancelToken = axios.CancelToken
 const source = CancelToken.source()

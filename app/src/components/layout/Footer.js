@@ -1,10 +1,10 @@
 'use strict'
-import '../static/css/style.css'
-import '../static/css/Layout.css'
+import '../../style.css'
+import './layout.css'
 
 import React from 'react'
 import SocialButton from './SocialButton'
-import socialConfig from '../data/social.json'
+import socialConfig from './social.json'
 
 class Footer extends React.Component {
   render() {

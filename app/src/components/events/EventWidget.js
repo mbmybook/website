@@ -1,6 +1,6 @@
 'use strict'
-import '../static/css/style.css'
-import '../static/css/event.css'
+import '../../style.css'
+import './events.css'
 
 import React from 'react'
 

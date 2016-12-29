@@ -1,6 +1,6 @@
 'use strict'
 
-var appConfig = require('./src/data/appConfig')
+var appConfig = require('./src/appConfig')
 var bodyParser = require('body-parser')
 var express = require('express')
 var fs = require('fs')
@@ -33,7 +33,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.get('/logo.png', function(req, res) {
-  res.sendfile(path.join(__dirname, 'src/static/img/mb-logo.png'))
+  res.sendfile(path.join(__dirname, 'src/components/shared/img/mb-logo.png'))
 })
 
 // React routing

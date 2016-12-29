@@ -1,9 +1,9 @@
 'use strict'
-import '../static/css/style.css'
-import '../static/css/MenuButton.css'
+import '../../style.css'
+import './menuButton.css'
 
 import React from 'react'
-import NavLink from './NavLink'
+import NavLink from '../shared/NavLink'
 
 class MenuButton extends React.Component {
   colorToRender(homepage, link, name) {
@@ -40,7 +40,7 @@ class MenuButton extends React.Component {
     const colorStyle = { color: colorCode }
     return <NavLink to={this.props.item.link}> 
       <button className='menu-button' style={borderStyle}>
-        <img className='menu-button-icon' src={require(`../static/img/${this.props.item.icon}-${color}.svg`)}/>
+        <img className='menu-button-icon' src={require(`./img/menuIcons/${this.props.item.icon}-${color}.svg`)}/>
         <span className='menu-button-text font-helvetica font-size-15' style={colorStyle}>{this.props.item.english}<br />{this.props.item.chinese}</span>
       </button>
     </NavLink>

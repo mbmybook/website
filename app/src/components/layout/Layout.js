@@ -1,6 +1,6 @@
 'use strict'
-import '../static/css/style.css'
-import '../static/css/Layout.css'
+import '../../style.css'
+import './layout.css'
 
 import React from 'react'
 import HeaderMenu from './HeaderMenu'

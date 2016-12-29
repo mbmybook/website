@@ -1,11 +1,11 @@
 'use strict'
-import '../static/css/style.css'
-import '../static/css/issues.css'
+import '../../style.css'
+import './issues.css'
 
 import React from 'react'
-import Picture from './Picture'
+import Picture from '../shared/Picture'
 import IssueViewer from './IssueViewer'
-import issueData from '../data/issue.json'
+import issueData from './issue.json'
 
 class Issues extends React.Component {
   constructor(props) {
@@ -32,7 +32,7 @@ class Issues extends React.Component {
       <div className='issue-list-panel debug'>
         {issueData.map(issue => 
           <a href='#' className='issue-list-link debug' onClick={() => this.updateCurrentIssue(issue)} key={issue.title}>
-            <Picture src={require(`../static/img/covers/${issue.cover}`)}/>
+            <Picture src={require(`./img/covers/${issue.cover}`)}/>
             <p className='issue-list-text font-helvetica font-size-13'>{issue.title}</p>
           </a>
         )}

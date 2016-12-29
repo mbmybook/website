@@ -1,5 +1,5 @@
 'use strict'
-import '../static/css/style.css'
+import '../../style.css'
 
 import React from 'react'
 

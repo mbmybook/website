@@ -1,12 +1,12 @@
 'use strict'
-import '../static/css/style.css'
-import '../static/css/event.css'
+import '../../style.css'
+import './events.css'
 
 import React from 'react'
 import moment from 'moment'
-import NavLink from './NavLink'
+import NavLink from '../shared/NavLink'
 import EventWidget from './EventWidget'
-import Picture from './Picture'
+import Picture from '../shared/Picture'
 
 const formatMonth = ['JAN 一月', 'FEB 二月', 'MAR 三月', 'APR 四月', 'MAY 五月', 'JUN 六月', 'JUL 七月', 'AUG 八月', 'SEP 九月', 'OCT 十月', 'NOV 十一月', 'DEC 十二月']
 
@@ -15,7 +15,7 @@ class EventPreview extends React.Component {
     const date = new Date(this.props.date)
     const now = Date.now()
     const formatDateTime = moment(date).format('YYYY-MM-DD hh:mm')
-    const imgSrc = this.props.featured_image ? this.props.featured_image : require('../static/img/mb-logo-blue.svg')
+    const imgSrc = this.props.featured_image ? this.props.featured_image : require('../shared/img/mb-logo-blue.svg')
 
     return (
       <NavLink className='event-preview-panel' to={'/events/' + this.props.slug}>

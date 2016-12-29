@@ -1,10 +1,10 @@
 'use strict'
-import '../static/css/style.css'
-import '../static/css/about.css'
+import '../../style.css'
+import './about.css'
 
 import React from 'react'
-import Picture from './Picture'
-import aboutParagraph from '../data/about.json'
+import Picture from '../shared/Picture'
+import aboutParagraph from './about.json'
 
 class About extends React.Component {
   render() {
@@ -18,7 +18,7 @@ class About extends React.Component {
         )}
       </div>
       <div className='about-image-panel debug'>
-        <Picture src={require('../static/img/about-us-image.jpg')}/>
+        <Picture src={require('./img/about-us-image.jpg')}/>
       </div>
     </div>
   }

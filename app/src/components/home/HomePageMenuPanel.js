@@ -1,12 +1,12 @@
 'use strict'
-import '../static/css/style.css'
-import '../static/css/IndexPage.css'
+import '../../style.css'
+import './home.css'
 
 import React from 'react'
-import MenuButton from './MenuButton'
-import menuConfig from '../data/menu.json'
+import MenuButton from '../layout/MenuButton'
+import menuConfig from '../layout/menu.json'
 
-class IndexPageMenuPanel extends React.Component {
+class HomePageMenuPanel extends React.Component {
   render() {
     return <div className='menu-panel-index-page horizontal-center debug'>
       {menuConfig.map(item => <MenuButton key={item.english} item={item} homepage={true} />)}
@@ -14,4 +14,4 @@ class IndexPageMenuPanel extends React.Component {
   }
 }
 
-export default IndexPageMenuPanel
+export default HomePageMenuPanel
