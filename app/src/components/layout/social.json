@@ -1,10 +1,13 @@
 [{
   "icon": "facebook-icon",
+  "type": "link",
   "link": "https://www.facebook.com/mbmybook/"
 },{
   "icon": "wechat-icon",
-  "link": "http://www.mbmybook.ca/"
+  "type": "modal",
+  "image": "wechat-qrcode.jpg"
 },{
   "icon": "weibo-icon",
+  "type": "link",
   "link": "http://weibo.com/vancouvermybook/" 
 }]
