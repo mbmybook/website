@@ -15,7 +15,9 @@ class Home extends React.Component {
   render() {
     return <div>
       <img className='mb-logo-index-page horizontal-center debug' src={require('../shared/img/mb-logo-white.svg')}/>
-      <HomePageMenuPanel />
+      <div style={{textAlign: 'center'}}>
+        <HomePageMenuPanel />
+      </div>
     </div>
   }
 }

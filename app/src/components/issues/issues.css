@@ -4,6 +4,7 @@
   max-height: 630px;
   display: flex;
   flex-direction: row;
+  padding-left: 1.5vh;
 }
 .current-issue-panel {
   display: flex;
@@ -46,4 +47,52 @@
   line-height: 1.77;
   text-align: center;
   color: #000000;
+}
+
+@media only screen and (max-width: 800px) { 
+  .issues-panel {
+    min-width: 0;
+    max-height: none;
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .current-issue-panel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .issue-view-title {
+    margin-left: 5vh;
+  }
+  .issue-viewer {
+    display: flex;
+    width: 100vw;
+    height: 450px;
+  }
+  .issue-special-title {
+    height: 0;
+    margin: 0;
+    visibility: hidden;
+  }
+  .issue-special-content {
+    height: 0;
+    margin: 0;
+    visibility: hidden;
+  }
+  .issue-list-panel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .issue-list-link {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 0.5vh;
+    margin-right: 0.5vh;
+  }
+  .issue-list-text {
+    height: 0;
+    margin: 0;
+    visibility: hidden;
+  }
 }

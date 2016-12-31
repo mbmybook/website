@@ -1,7 +1,8 @@
 [{
   "icon": "facebook-icon",
   "type": "link",
-  "link": "https://www.facebook.com/mbmybook/"
+  "link": "https://www.facebook.com/mbmybook/",
+  "deep-link": "fb://page/mbmybook/"
 },{
   "icon": "wechat-icon",
   "type": "modal",

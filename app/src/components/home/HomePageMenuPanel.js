@@ -3,13 +3,13 @@ import '../../style.css'
 import './home.css'
 
 import React from 'react'
-import MenuButton from '../layout/MenuButton'
+import IndexMenuButton from '../layout/IndexMenuButton'
 import menuConfig from '../layout/menu.json'
 
 class HomePageMenuPanel extends React.Component {
   render() {
-    return <div className='menu-panel-index-page horizontal-center debug'>
-      {menuConfig.map(item => <MenuButton key={item.english} item={item} homepage={true} />)}
+    return <div className='menu-panel-index-page debug'>
+      {menuConfig.map(item => <IndexMenuButton key={item.english} item={item} />)}
     </div>
   }
 }

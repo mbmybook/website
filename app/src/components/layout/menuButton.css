@@ -6,8 +6,6 @@
   background-color: Transparent;
   cursor: pointer;
   outline: none;
-  margin-left: 39px;
-  margin-right: 39px;
 }
 .menu-button-icon {
   position: absolute;
@@ -24,4 +22,49 @@
   top: 6px;
   left: 57px;
   text-align: center;
+}
+.index-menu-button {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: Transparent;
+  cursor: pointer;
+  outline: none;
+  border: solid 1px #FFFFFF;
+}
+.index-menu-button-icon {
+  position: absolute;
+  width: 40px;
+  height: 35.8px;
+  top: 7px;
+  left: 37px;
+  object-fit: contain;
+}
+.index-menu-button-text {
+  position: absolute;
+  width: 142px;
+  height: 39px;
+  top: 6px;
+  left: 57px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) { 
+  .menu-button {
+    width: 50px;
+    height: 50px;
+    border: 0 !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu-button-icon {
+    top: 7px;
+    left: 5px;
+  }
+  .menu-button-text {
+    visibility: hidden;
+  }
 }
