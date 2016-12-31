@@ -13,7 +13,7 @@
 }
 .mb-logo-layout a {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 1.5vh;
 }
 .menu-panel-layout {
   max-width: 834px;
@@ -23,8 +23,8 @@
   display: inline-block;
   margin-top: 2vh;
   margin-bottom: 2vh;
-  margin-left: 5vh;
-  margin-right: 5vh;
+  margin-left: 39px;
+  margin-right: 39px;
 }
 .content-and-footer {
   height: 100%;
@@ -98,6 +98,9 @@
 }
 
 @media only screen and (max-width: 800px) { 
+  .container {
+    overflow-x: hidden;
+  }
   .header {
     height: 13vh;
     min-width: 0px;
@@ -107,7 +110,7 @@
     margin-left: 0;
   }
   .mb-logo-layout a img{
-    width: 70%;
+    width: 13vh;
   }
   .menu-panel-layout {
     margin-left: 0;
