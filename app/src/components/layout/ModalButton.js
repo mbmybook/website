@@ -24,7 +24,7 @@ class ModalButton extends React.Component {
   
   render() {
     return (
-      <span>
+      <a>
         <img className='social-button-icon modal-button-icon' src={require(`./img/footer/${this.props.icon}.svg`)} onClick={this.handleOpenModal}/>
         <ReactModal 
            isOpen={this.state.showModal}
@@ -36,7 +36,7 @@ class ModalButton extends React.Component {
         >
           <Picture src={require(`./img/footer/${this.props.image}`)}/>
         </ReactModal>
-      </span>
+      </a>
     )
   }
 }
