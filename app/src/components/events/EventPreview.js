@@ -14,8 +14,12 @@ class EventPreview extends React.Component {
   render() {
     const date = new Date(this.props.date)
     const now = Date.now()
-    const formatDateTime = moment(date).format('YYYY-MM-DD hh:mm')
     const imgSrc = this.props.featured_image ? this.props.featured_image : require('../shared/img/mb-logo-blue.svg')
+    
+    let metaString = '活動日期 ' + moment(date).format('YYYY-MM-DD').toString()
+    if (this.props.endDate) {
+      metaString += ' 至 ' + moment(this.props.endDate).format('YYYY-MM-DD')
+    }
 
     return (
       <NavLink className='event-preview-panel' to={'/events/' + this.props.slug}>
@@ -32,7 +36,7 @@ class EventPreview extends React.Component {
         </div>
         <div className='event-preview-text-panel debug'>
           <h1 className='event-preview-title font-helvetica font-size-24 debug'>{this.props.title}</h1>
-          <p className='event-preview-meta font-helvetica font-size-13 debug'>{formatDateTime}</p>
+          <p className='event-preview-meta font-helvetica font-size-13 debug'>{metaString}</p>
           <div className='event-preview-summary font-helvetica font-size-13 debug'
              dangerouslySetInnerHTML={{__html: this.props.excerpt}}>
           </div>
