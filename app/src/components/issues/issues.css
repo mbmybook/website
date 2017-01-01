@@ -22,11 +22,8 @@
   margin-bottom: 1em;
 }
 .issue-viewer {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
   width: 800px;
-  height: 60vh;
+  height: 55vh;
 }
 .issue-special-title {
   letter-spacing: 8px;
@@ -74,7 +71,6 @@
     margin-left: 5vh;
   }
   .issue-viewer {
-    display: flex;
     width: 100vw;
     height: 50vh;
   }
