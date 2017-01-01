@@ -10,7 +10,7 @@ class MenuButton extends React.Component {
     if (this.context.router.isActive(link)) {
       return 'black'
     } else {
-      if (name === 'Events' && this.context.router.getCurrentLocation().pathname.startsWith('/events')) {
+      if (name === 'Events' && /^\/events/.test(this.context.router.getCurrentLocation().pathname)) {
         return 'black'
       } else {
         return 'grey'

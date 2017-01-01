@@ -1,12 +1,16 @@
 .about-panel {
   max-width: 1062px;
   min-width: 940px;
-  max-height: 630px;
+  height: 630px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
 }
 .paragraph-panel {
   width: 70%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
 }
@@ -27,6 +31,8 @@
 .about-image-panel {
   min-height: 100%;
   width: 30%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   margin-right: 1.5vh;
   margin-bottom: 1.5vh;
@@ -46,5 +52,10 @@
   }
   .about-paragraph-content {
     margin-right: 1.5vh;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .about-image-panel {
+    height: 421px;
   }
 }

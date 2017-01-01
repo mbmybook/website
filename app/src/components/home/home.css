@@ -22,3 +22,9 @@
     margin-top: 11vh;
   }
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .mb-logo-index-page {
+    max-height: 20vh;
+    max-width: 29.84vh;
+  }
+}
