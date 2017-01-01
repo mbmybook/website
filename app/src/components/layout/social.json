@@ -2,13 +2,15 @@
   "icon": "facebook-icon",
   "type": "link",
   "link": "https://www.facebook.com/mbmybook/",
-  "deep-link": "fb://page/mbmybook/"
+  "deep_link": "fb://page/mbmybook/"
 },{
   "icon": "wechat-icon",
   "type": "modal",
+  "link": "http://mp.weixin.qq.com/s/m2YWP5Az0gSpcA-htOJfxg",
   "image": "wechat-qrcode.jpg"
 },{
   "icon": "weibo-icon",
   "type": "link",
-  "link": "http://weibo.com/vancouvermybook/" 
+  "link": "http://weibo.com/vancouvermybook/",
+  "deep_link": "http://weibo.com/vancouvermybook/"
 }]

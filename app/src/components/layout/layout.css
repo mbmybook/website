@@ -85,6 +85,17 @@
 .modal-button-icon {
   cursor: pointer;
 }
+.modal-button-link {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  margin: 0;
+}
+.modal-button-link img {
+  height: 0;
+  width: 0;
+  margin: 0;
+}
 .modal-button-modal {
   position: absolute;
   top: 40px;
@@ -139,7 +150,7 @@
     height: 100%;
     min-width: 0;
   }
-  .contact-panel a{
+  .contact-panel a {
     margin-right: 1em;
   }
   .social-panel a {
@@ -151,5 +162,11 @@
   .modal-button-modal {
     width: 80vw;
     height: 80vw;
+  }
+  .modal-button-icon {
+    visibility: hidden;
+  }
+  .modal-button-link {
+    
   }
 }
