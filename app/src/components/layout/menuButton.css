@@ -53,40 +53,42 @@
 
 @media only screen and (max-width: 1500px) { 
   .menu-button {
-    width: 200px;
-    height: 50px;
+    width: 160px;
+    height: 40px;
     border-radius: 100px;
   }
   .menu-button-icon {
-    width: 40px;
-    height: 35.8px;
-    top: 7px;
-    left: 37px;
+    width: 32px;
+    height: 28.64px;
+    top: 5.6px;
+    left: 26.6px;
     object-fit: contain;
   }
   .menu-button-text {
-    width: 142px;
-    height: 39px;
-    top: 6px;
-    left: 57px;
+    width: 123.6px;
+    height: 31.2px;
+    top: 3px;
+    left: 40.6px;
+    font-size: 13px;
   }
   .index-menu-button {
-    width: 200px;
-    height: 50px;
+    width: 160px;
+    height: 40px;
     border-radius: 100px;
   }
   .index-menu-button-icon {
-    width: 40px;
-    height: 35.8px;
-    top: 7px;
-    left: 37px;
+    width: 32px;
+    height: 28.64px;
+    top: 5.6px;
+    left: 26.6px;
     object-fit: contain;
   }
   .index-menu-button-text {
-    width: 142px;
-    height: 39px;
-    top: 6px;
-    left: 57px;
+    width: 123.6px;
+    height: 31.2px;
+    top: 3px;
+    left: 40.6px;
+    font-size: 13px;
   }
 }
 
