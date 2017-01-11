@@ -7,14 +7,6 @@ import Picture from '../shared/Picture'
 
 class EventNew extends React.Component {
   render() {
-    const linkStyle = {
-      display: 'block',
-      width: '318px',
-      height: '22px',
-      position: 'absolute',
-      left: '428px',
-      top: '400px'
-    }
     return (
       <div className='event-new-panel horizontal-center debug'>
         <h1 className='event-new-text font-helvetica font-size-24'>
