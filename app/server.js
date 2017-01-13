@@ -33,11 +33,11 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.get('/logo.png', function(req, res) {
-  res.sendfile(path.join(__dirname, 'src/components/shared/img/mb-logo.png'))
+  res.sendFile(path.join(__dirname, 'src/components/shared/img/mb-logo.png'))
 })
 
 app.get('/favicon.ico', function(req, res) {
-  res.sendfile(path.join(__dirname, 'src/favicon.ico'))
+  res.sendFile(path.join(__dirname, 'src/favicon.ico'))
 })
 
 // React routing

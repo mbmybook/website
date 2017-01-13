@@ -2,7 +2,7 @@
   "icon": "facebook-icon",
   "type": "link",
   "link": "https://www.facebook.com/mbmybook/",
-  "deep_link": "https://www.facebook.com/mbmybook/"
+  "deep_link": "fb://page/1449970831978662"
 },{
   "icon": "wechat-icon",
   "type": "modal",
