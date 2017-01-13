@@ -30,10 +30,10 @@ class MenuButton extends React.Component {
   render() {
     const color = this.colorToRender(this.props.item.link, this.props.item.english)
     const colorCode = this.colorCodeForStyle(color)
-    const borderStyle = { border: 'solid 1px ' + colorCode }
+    const borderColor = { borderColor: colorCode }
     const colorStyle = { color: colorCode }
     return <NavLink to={this.props.item.link}>
-      <button className='menu-button' style={borderStyle}>
+      <button className='menu-button' style={borderColor}>
         <img className='menu-button-icon' src={require(`./img/menuIcons/${this.props.item.icon}-${color}.svg`)}/>
         <span className='menu-button-text font-helvetica font-size-15' style={colorStyle}>{this.props.item.english}<br />{this.props.item.chinese}</span>
       </button>
