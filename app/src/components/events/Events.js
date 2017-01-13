@@ -3,6 +3,7 @@ import '../../style.css'
 import './events.css'
 
 import React from 'react'
+import Helmet from 'react-helmet'
 import axios from 'axios'
 import EventPreview from './EventPreview'
 import appConfig from '../../appConfig'
@@ -41,6 +42,7 @@ class Events extends React.Component {
     if (this.state.posts.length > 0) {
       return (
         <div className='event-panel horizontal-center debug'>
+          <Helmet title='mb. MyBook - 活動推廣' />
           <EventPreview key={eventNew.slug} slug={eventNew.slug} title={eventNew.title} date={eventNew.date} endDate={eventNew.end_date} excerpt={eventNew.excerpt} featured_image={eventNew.featured_image} />
           {this.state.posts.map(post =>
             <EventPreview key={post.slug} slug={post.slug} title={post.title} date={post.date} excerpt={post.excerpt} featured_image={post.featured_image} />
@@ -48,7 +50,11 @@ class Events extends React.Component {
         </div>
       )
     } else {
-      return <div className='event-panel horizontal-center debug'/>
+      return (
+        <div className='event-panel horizontal-center debug'>
+          <Helmet title='mb. MyBook - 活動推廣' />
+        </div>
+      )
     }
   }
 }

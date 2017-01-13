@@ -3,12 +3,14 @@ import '../../style.css'
 import './about.css'
 
 import React from 'react'
+import Helmet from 'react-helmet'
 import Picture from '../shared/Picture'
 import aboutParagraph from './about.json'
 
 class About extends React.Component {
   render() {
     return <div className='about-panel horizontal-center debug'>
+      <Helmet title='mb. MyBook - 關於我們' />
       <div className='paragraph-panel debug'>
         {aboutParagraph.map(paragraph => 
           <div key={paragraph.title}>
