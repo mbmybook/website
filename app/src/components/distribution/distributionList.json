@@ -1,0 +1,34 @@
+[{
+  "city": "Richmond",
+  "locations": [{
+    "name": "Chattime 日出茶太",
+    "address": "9100 Blundell Rd, Richmond, BC V6Y 3X91"
+  },{
+    "name": "Chattime 日出茶太",
+    "address": "9100 Blundell Rd, Richmond, BC V6Y 3X92"
+  },{
+    "name": "Chattime 日出茶太",
+    "address": "9100 Blundell Rd, Richmond, BC V6Y 3X93"
+  }]
+},{
+  "city": "Vancouver",
+  "locations": [{
+    "name": "Chattime 日出茶太",
+    "address": "9100 Blundell Rd, Richmond, BC V6Y 3X94"
+  },{
+    "name": "Chattime 日出茶太",
+    "address": "9100 Blundell Rd, Richmond, BC V6Y 3X95"
+  },{
+    "name": "Chattime 日出茶太",
+    "address": "9100 Blundell Rd, Richmond, BC V6Y 3X96"
+  },{
+    "name": "Chattime 日出茶太",
+    "address": "9100 Blundell Rd, Richmond, BC V6Y 3X97"
+  }]
+},{
+  "city": "Burnaby",
+  "locations": [{
+    "name": "Chattime 日出茶太",
+    "address": "9100 Blundell Rd, Richmond, BC V6Y 3X98"
+  }]
+}]
