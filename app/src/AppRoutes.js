@@ -10,6 +10,7 @@ import Home from './components/home/Home'
 import Layout from './components/layout/Layout'
 import About from './components/about/About'
 import Issues from './components/issues/Issues'
+import Distribution from './components/distribution/Distribution'
 import Events from './components/events/Events'
 import EventNew from './components/events/EventNew'
 import EventDetail from './components/events/EventDetail'
@@ -29,6 +30,7 @@ class AppRoutes extends React.Component {
         <Route component={Layout}>
           <Route path='/about' component={About}/>
           <Route path='/issues' component={Issues}/>
+          <Route path='/distribution' component={Distribution}/>
           <Route path='/events' component={Events}/>
           <Route path='/events/new' component={EventNew}/>
           <Route path='/events/:slug' component={EventDetail}/>

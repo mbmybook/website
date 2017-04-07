@@ -9,6 +9,11 @@
   "english": "Issues",
   "chinese": "電子雜誌"
 },{
+  "icon": "distribution-icon",
+  "link": "/distribution",
+  "english": "Distribution",
+  "chinese": "派發地點"
+},{
   "icon": "event-icon",
   "link": "/events",
   "english": "Events",
