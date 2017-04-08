@@ -4,31 +4,133 @@
     "name": "Chattime 日出茶太",
     "address": "9100 Blundell Rd, Richmond, BC V6Y 3X91"
   },{
-    "name": "Chattime 日出茶太",
-    "address": "9100 Blundell Rd, Richmond, BC V6Y 3X92"
+    "name": "CoCo 都可",
+    "address": "140-8100 No 2 Rd, Richmond, BC V7C 1H8"
   },{
-    "name": "Chattime 日出茶太",
-    "address": "9100 Blundell Rd, Richmond, BC V6Y 3X93"
+    "name": "Empress Beauty 美妝店",
+    "address": "4000 No 3 Rd #1065, Richond, BC V6X 0J8"
+  },{
+    "name": "G.L.G.W. 锅里锅外",
+    "address": "150-8291 Westminster Highway, Richmond, BC V6Y 1A7"
+  },{
+    "name": "Gong Cha 貢茶",
+    "address": "6068 No 3 Rd #130, Richmond, BC V6Y 2B3"
+  },{
+    "name": "Green & Pure 機本•美",
+    "address": "4000 No 3 Rd #2165, Richmond, BC V6X"
+  },{
+    "name": "IMROSE",
+    "address": "4000 No 3 Rd #2365, Richmond, BC V6X 0J8"
+  },{
+    "name": "Kuo Hua 國華台灣食品",
+    "address": "4551 No 3 Rd #120, Richmond, BC V6X 2C3"
+  },{
+    "name": "Memory Corner Taiwanese Cuisine 有香",
+    "address": "6900 No 3 Rd, Richmond, BC V6Y 2C5"
+  },{
+    "name": "New Modern Reflexology & Body Care Centre 摩登足",
+    "address": "4811 Hazelbridge Way #165, Richmond, BC V6X 3K7"
+  },{
+    "name": "Salon V Hair Design",
+    "address": "4231 Hazelbridge Way, Richmond, BC V6X 3L7"
+  },{
+    "name": "Shake Shake Tea 拌拌堂",
+    "address": "131-4600 No 3 Rd, Richmond, BC V6X 2C2"
+  },{
+    "name": "Smart N Save Café 至價細小食店",
+    "address": "202-, 7080 River Rd, Richmond, BC V6X 1X5"
+  },{
+    "name": "Smart N Save 至價細",
+    "address": "Lansdowne Centre, 5300 No 3 Rd, Richmond, BC V6X 2X9"
+  },{
+    "name": "Sulmida Dessert Cafe",
+    "address": "140-8211 Ackroyd Road, Richmond V6X 3K8"
+  },{
+    "name": "Tea Well 茶井",
+    "address": "4811 Hazelbridge Way, Richmond, BC V6X 3K7"
+  },{
+    "name": "Tian Shi Fu 田師傅湘菜館",
+    "address": "8251 Alexandra Rd, Richmond, BC V6X 1C3"
   }]
 },{
   "city": "Vancouver",
   "locations": [{
-    "name": "Chattime 日出茶太",
-    "address": "9100 Blundell Rd, Richmond, BC V6Y 3X94"
+    "name": "Bubble World 大頭仔",
+    "address": "3377 Kingsway #2, Vancouver, BC V5R 5K6"
   },{
     "name": "Chattime 日出茶太",
-    "address": "9100 Blundell Rd, Richmond, BC V6Y 3X95"
+    "address": "1274 Robson St, Vancouver, BC V6E 1C2"
   },{
     "name": "Chattime 日出茶太",
-    "address": "9100 Blundell Rd, Richmond, BC V6Y 3X96"
+    "address": "1545 W Broadway, Vancouver, BC V6J 1W6"
   },{
     "name": "Chattime 日出茶太",
-    "address": "9100 Blundell Rd, Richmond, BC V6Y 3X97"
+    "address": "6075 West Blvd, Vancouver, BC V6M 2J2"
+  },{
+    "name": "City 1 Cafe 第一饌",
+    "address": "954 W King Edward Ave, Vancouver, BC V5Z 2E2"
+  },{
+    "name": "Coco 都可",
+    "address": "3275 Kingsway, Vancouver, BC V5R 5K4"
+  },{
+    "name": "Couturist",
+    "address": "1085 Robson St, Vancouver, BC V6E 1A9"
+  },{
+    "name": "Fresh Legend 仙芋傳奇",
+    "address": "3393 Kingsway, Vancouver, BC V5R 5K6"
+  },{
+    "name": "Gong Cha 貢茶",
+    "address": "386 Robson St, Vancouver, BC V6B 2B2"
+  },{
+    "name": "Happy Flowers 浪漫花屋",
+    "address": "2679 Kingsway, Vancouver, BC V5R 5H3"
+  },{
+    "name": "I-Cafe 港式茶餐廳",
+    "address": "2525 Heather St, Vancouver, BC V5Z 3J2"
+  },{
+    "name": "Icy Bar 利源冰店",
+    "address": "3618 Kingsway, Vancouver, BC V5R 5M2"
+  },{
+    "name": "Kosoo Restaurant 高手",
+    "address": "832 Cardero St, Vancouver, BC V6G 2G5"
+  },{
+    "name": "Macao Restaurant 澳門茶餐廳",
+    "address": "2415 Main St, Vancouver, BC V5T 3E1"
+  },{
+    "name": "Mr. Mustache 小鬍子奶茶店",
+    "address": "8079 Granville St, Vancouver, BC V6P 4Z5"
   }]
 },{
   "city": "Burnaby",
   "locations": [{
+    "name": "BowBowCafe 一心麵典",
+    "address": "4611 Kingsway, Burnaby, BC V5H 4L3"
+  },{
+    "name": "C U Vision",
+    "address": "138-4800 Kingsway, Burnaby, BC V5H4J2"
+  },{
+    "name": "Candy Tree Dessert 糖果樹甜品屋",
+    "address": "4091 Kingsway, Burnaby, BC V5H 1Y9"
+  },{
+    "name": "Grand Dynasty 金殿皇朝",
+    "address": "4331 Dominion St, Burnaby, BC V5G 1C7"
+  },{
+    "name": "Mama Rich 寶媽",
+    "address": "4949 Kingsway, Burnaby, BC V5H 2E5"
+  },{
+    "name": "Main Island Cafe 名島魚湯米線",
+    "address": "5-4250 Kingsway, Burnaby, BC V5H 4T7"
+  },{
     "name": "Chattime 日出茶太",
-    "address": "9100 Blundell Rd, Richmond, BC V6Y 3X98"
+    "address": "5126 Kingsway, Burnaby, BC V5H 2E6"
+  },{
+    "name": "Wei Dao Cafe 香港味道",
+    "address": "5595 Kingsway, Burnaby, BC V5H 2G5"
+  },{
+    "name": "Szechuan Cuisine 川廚人家",
+    "address": "6408 Kingsway, Burnaby, BC V5E 1E1"
+  },{
+    "name": "Seafood House 溫州漁園美食",
+    "address": "The Crystal Mall, 4500 Kingsway, Burnaby, BC V5H 2B1"
   }]
 }]

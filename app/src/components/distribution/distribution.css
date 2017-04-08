@@ -46,4 +46,10 @@
   .distribution-panel {
     min-width: 0;
   }
+  .city-locations {
+    flex-direction: column;
+  }
+  .location-panel {
+    flex: 1 0 auto;
+  }
 }
