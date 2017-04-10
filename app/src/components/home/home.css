@@ -1,17 +1,15 @@
 .mb-logo-index-page {
   margin-top: 35vh;
-	max-height: 20vh;
+	max-height: 22vh;
 }
 .menu-panel-index-page {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 21vh;
-  display: inline-block;
-}
-.menu-panel-index-page a {
-  display: inline-block;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  margin-left: 5vh;
-  margin-right: 5vh;
+  max-width: 1024px;
 }
 
 @media only screen and (max-width: 800px) { 
@@ -19,6 +17,7 @@
     max-height: 13vh;
   }
   .menu-panel-index-page {
+    flex-direction: column;
     margin-top: 11vh;
   }
 }

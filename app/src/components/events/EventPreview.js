@@ -25,7 +25,7 @@ class EventPreview extends React.Component {
       <NavLink className='event-preview-panel' to={'/events/' + this.props.slug}>
         <div className='event-widget-panel debug'>
           <EventWidget color={'#0889ae'} text={formatMonth[date.getMonth()]}/>
-          {date < now ? (
+          {this.props.slug !== 'meng-tu' ? (
             <EventWidget color={'#bebebe'} text={'Past'}/>
           ) : (
             <EventWidget color={'#f3752a'} text={'Coming'}/>
@@ -36,7 +36,7 @@ class EventPreview extends React.Component {
         </div>
         <div className='event-preview-text-panel debug'>
           <h1 className='event-preview-title font-helvetica font-size-24 debug'>{this.props.title}</h1>
-          <p className='event-preview-meta font-helvetica font-size-13 debug'>{metaString}</p>
+          {/*<p className='event-preview-meta font-helvetica font-size-13 debug'>{metaString}</p>*/}
           <div className='event-preview-summary font-helvetica font-size-13 debug'
              dangerouslySetInnerHTML={{__html: this.props.excerpt}}>
           </div>

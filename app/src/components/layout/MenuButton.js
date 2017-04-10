@@ -8,10 +8,10 @@ import NavLink from '../shared/NavLink'
 class MenuButton extends React.Component {
   colorToRender(link, name) {
     if (this.context.router.isActive(link)) {
-      return 'black'
+      return 'white'
     } else {
       if (name === 'Events' && /^\/events/.test(this.context.router.getCurrentLocation().pathname)) {
-        return 'black'
+        return 'white'
       } else {
         return 'grey'
       }
@@ -20,24 +20,22 @@ class MenuButton extends React.Component {
   colorCodeForStyle(color) {
     switch (color) {
       case 'grey':
-        return '#A5A5A5'
-      case 'black':
-        return '#000000'
+        return 'rgba(255, 255, 255, 0.5)'
+      case 'white':
+        return '#ffffff'
       default:
-        return '#000000' // default to black
+        return '#ffffff' // default to white
     }
   }
   render() {
     const color = this.colorToRender(this.props.item.link, this.props.item.english)
     const colorCode = this.colorCodeForStyle(color)
-    const borderColor = { borderColor: colorCode }
     const colorStyle = { color: colorCode }
-    return <NavLink to={this.props.item.link}>
-      <button className='menu-button' style={borderColor}>
-        <img className='menu-button-icon' src={require(`./img/menuIcons/${this.props.item.icon}-${color}.svg`)}/>
-        <span className='menu-button-text font-helvetica font-size-15' style={colorStyle}>{this.props.item.english}<br />{this.props.item.chinese}</span>
-      </button>
-    </NavLink>
+    return (
+      <NavLink className='menu-button font-helvetica font-size-15' style={colorStyle} to={this.props.item.link}>
+        {this.props.item.chinese} {this.props.item.english}
+      </NavLink>
+    )
   }
 }
 

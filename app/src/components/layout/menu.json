@@ -1,21 +1,21 @@
 [{
   "icon": "about-us-icon",
   "link": "/about",
-  "english": "About Us",
+  "english": "about mb.",
   "chinese": "關於我們"
+},{
+  "icon": "event-icon",
+  "link": "/events",
+  "english": "events",
+  "chinese": "活動推廣"
 },{
   "icon": "issue-icon",
   "link": "/issues",
-  "english": "Issues",
+  "english": "issues",
   "chinese": "電子雜誌"
 },{
   "icon": "distribution-icon",
   "link": "/distribution",
-  "english": "Distribution",
-  "chinese": "派發地點"
-},{
-  "icon": "event-icon",
-  "link": "/events",
-  "english": "Events",
-  "chinese": "活動推廣"
+  "english": "distribution",
+  "chinese": "派發點"
 }]

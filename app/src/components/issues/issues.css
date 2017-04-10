@@ -1,32 +1,56 @@
 .issues-panel {
-  max-width: 1062px;
-  min-width: 940px;
-  height: 630px;
+  max-width: 1024px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  /*padding-left: 1.5vh;*/
+}
+.issue-list-panel {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
-  padding-left: 1.5vh;
+  height: 152px;
+  overflow: auto;
+  margin-left: 1.5vh;
+  margin-right: 1.5vh;
+  border-bottom: solid 1px #dcdcdc;
+}
+.issue-list-link {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  /*margin-left: 36px;
+  margin-right: 36px;*/
+  text-decoration: none;
+  /*flex: 1 0 auto;*/
+}
+.issue-list-link a {
+  /*width: 65px;
+  height: 88px;*/
 }
 .current-issue-panel {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  flex-direction: column;
-  width: 88%;
+  flex-direction: row;
+  margin-left: 1.5vh;
+  margin-right: 1.5vh;
+}
+.issue-special-panel {
+  width: 30%;
 }
 .issue-view-title {
-  letter-spacing: 8px;
   color: #000000;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 .issue-viewer {
-  width: 800px;
-  height: 55vh;
+  width: 70%;
+  min-height: 500px;
+  /*height: 55vh;*/
 }
 .issue-special-title {
-  letter-spacing: 8px;
   color: #000000;
   margin-top: 1.2em;
 }
@@ -34,24 +58,6 @@
   line-height: 1.77;
   color: #000000;
   white-space: pre-line;
-}
-.issue-list-panel {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  width: 12%;
-  min-height: 100%;
-  overflow: auto;
-}
-.issue-list-link {
-  margin-top: 2em;
-  text-decoration: none;
-}
-.issue-list-text {
-  line-height: 1.77;
-  text-align: center;
-  color: #000000;
 }
 
 @media only screen and (max-width: 800px) { 
@@ -61,6 +67,25 @@
     max-height: none;
     flex-direction: column;
     padding-left: 0;
+  }
+  .issue-list-panel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .issue-list-link {
+    display: inline-block;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 0.5vh;
+    margin-right: 0.5vh;
+  }
+  .issue-list-text {
+    height: 0;
+    margin: 0;
+    visibility: hidden;
   }
   .current-issue-panel {
     display: flex;
@@ -80,25 +105,6 @@
     visibility: hidden;
   }
   .issue-special-content {
-    height: 0;
-    margin: 0;
-    visibility: hidden;
-  }
-  .issue-list-panel {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
-  .issue-list-link {
-    display: inline-block;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    margin-left: 0.5vh;
-    margin-right: 0.5vh;
-  }
-  .issue-list-text {
     height: 0;
     margin: 0;
     visibility: hidden;

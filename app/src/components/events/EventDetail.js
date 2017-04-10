@@ -42,7 +42,7 @@ class EventDetail extends React.Component {
 
     return <div className='event-detail-panel horizontal-center debug'> 
       <h1 className='event-detail-title font-helvetica font-size-24 debug'>{this.state.post.title}</h1>
-      <p className='event-detail-meta font-helvetica font-size-13 debug'>{formatDateTime}</p>
+      {/*<p className='event-detail-meta font-helvetica font-size-13 debug'>{formatDateTime}</p>*/}
       <div className='event-detail-content font-helvetica font-size-13 debug'
            dangerouslySetInnerHTML={{__html: this.state.post.content}}></div>
     </div>

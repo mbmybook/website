@@ -4,6 +4,11 @@
   "link": "https://www.facebook.com/mbmybook/",
   "deep_link": "fb://page/1449970831978662"
 },{
+  "icon": "instagram-icon",
+  "type": "link",
+  "link": "https://www.instagram.com/mb.mybook/",
+  "deep_link": "https://www.instagram.com/mb.mybook/"
+},{
   "icon": "wechat-icon",
   "type": "modal",
   "link": "http://mp.weixin.qq.com/s/0rukRylHAITFVM3m5YCv3Q",

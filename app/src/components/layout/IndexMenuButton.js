@@ -7,12 +7,11 @@ import NavLink from '../shared/NavLink'
 
 class IndexMenuButton extends React.Component {
   render() {
-    return <NavLink to={this.props.item.link}> 
-      <button className='index-menu-button'>
-        <img className='index-menu-button-icon' src={require(`./img/menuIcons/${this.props.item.icon}-white.svg`)}/>
-        <span className='index-menu-button-text font-helvetica font-size-15'>{this.props.item.english}<br />{this.props.item.chinese}</span>
-      </button>
-    </NavLink>
+    return (
+      <NavLink className='index-menu-button font-helvetica font-size-24-20-18' to={this.props.item.link}>
+        {this.props.item.chinese} {this.props.item.english}
+      </NavLink>
+    )
   }
 }
 

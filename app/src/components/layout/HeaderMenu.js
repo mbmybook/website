@@ -10,16 +10,20 @@ import menuConfig from './menu.json'
 
 class HeaderMenu extends React.Component {
   render() {
-    return <div className='header horizontal-center debug'>
-      <div className='mb-logo-layout vertical-center debug'>
-        <NavLink to='/' onlyActiveOnIndex={true}>
-          <Picture src={require('../shared/img/mb-logo-blue.svg')}/>
-        </NavLink>
+    return (
+      <div className='header-container debug'>
+        <div className='header horizontal-center debug'>
+          <div className='mb-logo-layout vertical-center debug'>
+            <NavLink to='/' onlyActiveOnIndex={true}>
+              <Picture src={require('../shared/img/mb-logo-white-white.svg')}/>
+            </NavLink>
+          </div>
+          <div className='menu-panel-layout debug'>
+            {menuConfig.map(item => <MenuButton key={item.english} item={item}/>)}
+          </div>
+        </div>
       </div>
-      <div className='menu-panel-layout vertical-center debug'>
-        {menuConfig.map(item => <MenuButton key={item.english} item={item}/>)}
-      </div>
-    </div>
+    )
   }
 }
 

@@ -14,7 +14,7 @@ class About extends React.Component {
       <div className='paragraph-panel debug'>
         {aboutParagraph.map(paragraph => 
           <div key={paragraph.title}>
-            <h1 className='about-paragraph-title font-helvetica font-size-24'>{paragraph.title}</h1>
+            <h1 className='about-paragraph-title font-helvetica font-size-32'>{paragraph.title}</h1>
             <p className='about-paragraph-content font-helvetica font-size-13'>{paragraph.content.split(/\\n/g).join('\n')}</p>
           </div>
         )}

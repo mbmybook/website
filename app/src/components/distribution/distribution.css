@@ -1,6 +1,5 @@
 .distribution-panel {
-  max-width: 1062px;
-  min-width: 940px;
+  max-width: 1024px;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -8,7 +7,6 @@
 }
 
 .distribution-title {
-  letter-spacing: 8px;
   color: #0889ae;
   text-align: center;
   margin-top: 1em;

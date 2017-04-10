@@ -1,7 +1,5 @@
 .about-panel {
-  max-width: 1062px;
-  min-width: 940px;
-  height: 630px;
+  max-width: 1024px;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -15,7 +13,6 @@
   flex-direction: column;
 }
 .about-paragraph-title {
-  letter-spacing: 8px;
   color: #000000;
   margin-left: 1.5vh;
   margin-top: 1.5em;

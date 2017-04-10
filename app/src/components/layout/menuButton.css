@@ -1,113 +1,27 @@
 .menu-button {
-  position: relative;
-  width: 200px;
-  height: 50px;
-  border-radius: 100px;
-  border-style: solid;
-  border-width: 1px;
-  background-color: Transparent;
-  cursor: pointer;
-  outline: none;
-}
-.menu-button-icon {
-  position: absolute;
-  width: 40px;
-  height: 35.8px;
-  top: 7px;
-  left: 37px;
+  margin-left: 67px;
   object-fit: contain;
-}
-.menu-button-text {
-  position: absolute;
-  width: 142px;
-  height: 39px;
-  top: 6px;
-  left: 57px;
   text-align: center;
+  text-decoration: none;
 }
 .index-menu-button {
-  position: relative;
-  width: 200px;
-  height: 50px;
-  border-radius: 100px;
-  background-color: Transparent;
-  cursor: pointer;
-  outline: none;
-  border: solid 1px #FFFFFF;
-}
-.index-menu-button-icon {
-  position: absolute;
-  width: 40px;
-  height: 35.8px;
-  top: 7px;
-  left: 37px;
+  flex: 1 0 auto;
   object-fit: contain;
-}
-.index-menu-button-text {
-  position: absolute;
-  width: 142px;
-  height: 39px;
-  top: 6px;
-  left: 57px;
-  color: #FFFFFF;
   text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
-@media only screen and (max-width: 1500px) { 
+@media only screen and (max-width: 1024px) { 
   .menu-button {
-    width: 160px;
-    height: 40px;
-    border-radius: 100px;
-  }
-  .menu-button-icon {
-    width: 32px;
-    height: 28.64px;
-    top: 5.6px;
-    left: 26.6px;
-    object-fit: contain;
-  }
-  .menu-button-text {
-    width: 123.6px;
-    height: 31.2px;
-    top: 3px;
-    left: 40.6px;
-    font-size: 13px;
-  }
-  .index-menu-button {
-    width: 160px;
-    height: 40px;
-    border-radius: 100px;
-  }
-  .index-menu-button-icon {
-    width: 32px;
-    height: 28.64px;
-    top: 5.6px;
-    left: 26.6px;
-    object-fit: contain;
-  }
-  .index-menu-button-text {
-    width: 123.6px;
-    height: 31.2px;
-    top: 3px;
-    left: 40.6px;
-    font-size: 13px;
+    margin-left: 50px;
   }
 }
-
 @media only screen and (max-width: 800px) { 
   .menu-button {
-    width: 50px;
-    height: 50px;
-    border: 0 !important;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10px;
   }
-  .menu-button-icon {
-    top: 7px;
-    left: 5px;
-  }
-  .menu-button-text {
-    visibility: hidden;
+  .index-menu-button {
+    flex: 1 0 40px;
   }
 }
