@@ -32,7 +32,7 @@ class AppRoutes extends React.Component {
           <Route path='/issues' component={Issues}/>
           <Route path='/distribution' component={Distribution}/>
           <Route path='/events' component={Events}/>
-          <Route path='/events/new' component={EventNew}/>
+          {/*<Route path='/events/new' component={EventNew}/>*/}
           <Route path='/events/:slug' component={EventDetail}/>
         </Route>
         <Redirect from='*' to='/'/>

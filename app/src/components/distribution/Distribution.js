@@ -15,7 +15,7 @@ class Distribution extends React.Component {
     return (
       <div className='distribution-panel horizontal-center debug'>
         <Helmet title='mb. MyBook - 派發地點' />
-        <h1 className='distribution-title font-helvetica font-size-36'>全城派發</h1>
+        <h1 className='distribution-title font-helvetica font-size-32'>全城派發</h1>
         {list.map(city =>
           <div key={city.city}>
             <h1 className='city-title font-helvetica font-size-24'>{city.city}</h1>

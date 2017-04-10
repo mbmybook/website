@@ -26,6 +26,7 @@ class Issues extends React.Component {
       <div className='issue-list-panel debug'>
         {issueData.map(issue => 
           <a href='#' className='issue-list-link debug' onClick={() => this.updateCurrentIssue(issue)} key={issue.title}>
+            {/*<span>asdf</span>*/}
             <Picture src={require(`./img/covers/${issue.cover}`)}/>
           </a>
         )}
