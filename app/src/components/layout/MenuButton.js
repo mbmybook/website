@@ -7,7 +7,6 @@ import NavLink from '../shared/NavLink'
 
 class MenuButton extends React.Component {
   activeLink(link, name) {
-    console.log(link, name)
     if (this.context.router.isActive(link)) {
       return true
     } else {
@@ -19,7 +18,6 @@ class MenuButton extends React.Component {
     }
   }
   setLinkStyle(isActive) {
-    console.log(isActive)
     if (isActive) {
       return { color: '#ffffff', borderBottom: 'solid 2px #ffffff' }
     } else {

@@ -7,7 +7,7 @@ import Helmet from 'react-helmet'
 import axios from 'axios'
 import EventPreview from './EventPreview'
 import appConfig from '../../appConfig'
-import eventNew from './eventNewPreview'
+// import eventNew from './eventNewPreview'
 
 const CancelToken = axios.CancelToken
 const source = CancelToken.source()

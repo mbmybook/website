@@ -38,7 +38,7 @@ class EventDetail extends React.Component {
 
   render() {
     const date = new Date(this.state.post.date)
-    const formatDateTime = moment(date).format('YYYY-MM-DD hh:mm')
+    // const formatDateTime = moment(date).format('YYYY-MM-DD hh:mm')
 
     return <div className='event-detail-panel horizontal-center debug'> 
       <h1 className='event-detail-title font-helvetica font-size-24 debug'>{this.state.post.title}</h1>
