@@ -125,6 +125,9 @@
   .container {
     overflow-x: hidden;
   }
+  .header-container {
+    height: 124px;
+  }
   .mb-logo-layout a img{
     min-width: 50px;
   }
@@ -132,9 +135,8 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 3vh;
+    flex-direction: column;
+    margin-top: 0;
     margin-bottom: 0;
   }
   .footer-logo {

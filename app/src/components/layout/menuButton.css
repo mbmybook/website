@@ -20,10 +20,10 @@
 }
 @media only screen and (max-width: 800px) { 
   .menu-button {
-    margin-left: 10px;
-    margin-right: 10px;
-    /*margin: 0;*/
-    /*flex: 0 0 160px;*/
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 0;
+    padding-bottom: 0;
   }
   .index-menu-button {
     flex: 1 0 40px;
