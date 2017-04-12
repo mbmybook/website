@@ -102,7 +102,6 @@
 }
 .event-new-panel {
   max-width: 1062px;
-  min-width: 940px;
   display: flex;
   flex-direction: column;
 }
