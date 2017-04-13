@@ -99,6 +99,9 @@
   },{
     "name": "Mr. Mustache 小鬍子奶茶店",
     "address": "8079 Granville St, Vancouver, BC V6P 4Z5"
+  },{
+    "name": "Taiwan Taipei Original Pot 台灣台北原味花雕雞",
+    "address": "4063 Main St, Vancouver, BC V5V 3P5"
   }]
 },{
   "city": "Burnaby",
@@ -106,31 +109,31 @@
     "name": "BowBowCafe 一心麵典",
     "address": "4611 Kingsway, Burnaby, BC V5H 4L3"
   },{
-    "name": "C U Vision",
-    "address": "138-4800 Kingsway, Burnaby, BC V5H4J2"
-  },{
     "name": "Candy Tree Dessert 糖果樹甜品屋",
     "address": "4091 Kingsway, Burnaby, BC V5H 1Y9"
-  },{
-    "name": "Grand Dynasty 金殿皇朝",
-    "address": "4331 Dominion St, Burnaby, BC V5G 1C7"
-  },{
-    "name": "Mama Rich 寶媽",
-    "address": "4949 Kingsway, Burnaby, BC V5H 2E5"
-  },{
-    "name": "Main Island Cafe 名島魚湯米線",
-    "address": "5-4250 Kingsway, Burnaby, BC V5H 4T7"
   },{
     "name": "Chattime 日出茶太",
     "address": "5126 Kingsway, Burnaby, BC V5H 2E6"
   },{
-    "name": "Wei Dao Cafe 香港味道",
-    "address": "5595 Kingsway, Burnaby, BC V5H 2G5"
+    "name": "C U Vision",
+    "address": "138-4800 Kingsway, Burnaby, BC V5H4J2"
+  },{
+    "name": "Grand Dynasty 金殿皇朝",
+    "address": "4331 Dominion St, Burnaby, BC V5G 1C7"
+  },{
+    "name": "Main Island Cafe 名島魚湯米線",
+    "address": "5-4250 Kingsway, Burnaby, BC V5H 4T7"
+  },{
+    "name": "Mama Rich 寶媽",
+    "address": "4949 Kingsway, Burnaby, BC V5H 2E5"
+  },{
+    "name": "Seafood House 溫州漁園美食",
+    "address": "The Crystal Mall, 4500 Kingsway, Burnaby, BC V5H 2B1"
   },{
     "name": "Szechuan Cuisine 川廚人家",
     "address": "6408 Kingsway, Burnaby, BC V5E 1E1"
   },{
-    "name": "Seafood House 溫州漁園美食",
-    "address": "The Crystal Mall, 4500 Kingsway, Burnaby, BC V5H 2B1"
+    "name": "Wei Dao Cafe 香港味道",
+    "address": "5595 Kingsway, Burnaby, BC V5H 2G5"
   }]
 }]
