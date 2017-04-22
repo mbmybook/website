@@ -25,7 +25,7 @@ class EventPreview extends React.Component {
       <NavLink className='event-preview-panel' to={'/events/' + this.props.slug}>
         <div className='event-widget-panel debug'>
           <EventWidget color={'#0889ae'} text={formatMonth[date.getMonth()]}/>
-          {this.props.slug !== 'meng-tu' ? (
+          {this.props.slug !== 'rich-in-love' ? (
             <EventWidget color={'#bebebe'} text={'Past'}/>
           ) : (
             <EventWidget color={'#f3752a'} text={'Coming'}/>
