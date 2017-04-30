@@ -1,0 +1,37 @@
+[{
+  "slug": "mighty-mo",
+  "start_date": "2017-06-04T17:15:00-07:00",
+  "end_date": "2017-06-04T21:30:00-07:00",
+  "duration": "5:15PM / 7:30PM, Jun 04, 2017",
+  "location": "Norman Rothstein Theatre"
+},{
+  "slug": "rich-in-love",
+  "start_date": "2017-04-23T16:00:00-07:00",
+  "end_date": "2017-04-23T21:00:00-07:00",
+  "duration": "4PM / 7PM, Apr 23, 2017",
+  "location": "The Revue Stage at Granville Island"
+},{
+  "slug": "meng-tu",
+  "start_date": "2017-04-15T10:00:00-07:00",
+  "end_date": "2017-04-16T22:00:00-07:00",
+  "duration": "Apr 15 - 16, 2017",
+  "location": "Richmond Alexandra Road",
+  "other_meta": "主辦方：易食網\\n協辦方：mb. MyBook"
+},{
+  "slug": "shi-shen",
+  "start_date": "2017-01-05T09:00:00-08:00",
+  "end_date": "2017-02-05T20:00:00-08:00",
+  "duration": "Jan 05 - Feb 05, 2017"
+},{
+  "slug": "guo-de-gang",
+  "start_date": "2016-09-16T18:00:00-08:00",
+  "end_date": "2016-09-16T22:00:00-08:00",
+  "duration": "Sept 16, 2016",
+  "location": "溫哥華 The Orpheum"
+},{
+  "slug": "xing-yun-lun",
+  "start_date": "2016-09-03T09:00:00-08:00",
+  "end_date": "2016-09-04T18:00:00-08:00",
+  "duration": "Sept 03 - 04, 2016",
+  "location": "列治文百家店，麗晶廣場"
+}]
